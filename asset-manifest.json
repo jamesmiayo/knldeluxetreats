@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/knldeluxetreats/static/css/main.a092184b.css",
+    "main.js": "/knldeluxetreats/static/js/main.9a201eda.js",
+    "static/media/logo.png": "/knldeluxetreats/static/media/logo.3f5f5e78045f70410e64.png",
+    "index.html": "/knldeluxetreats/index.html",
+    "main.a092184b.css.map": "/knldeluxetreats/static/css/main.a092184b.css.map",
+    "main.9a201eda.js.map": "/knldeluxetreats/static/js/main.9a201eda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a092184b.css",
+    "static/js/main.9a201eda.js"
+  ]
+}
