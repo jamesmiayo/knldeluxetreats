@@ -1,0 +1,110 @@
+.navbar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+  background: var(--mainColor);
+  color: var(--textColor-white);
+  /* flex-direction: row-reverse; */
+  margin: 0 0;
+}
+
+section {
+  background: var(--mainColor);
+}
+.navbar__container nav {
+  display: flex;
+  float: right;
+}
+
+.navbar__container a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--textColor-white);
+}
+
+.navbar__container a:hover {
+  color: var(--textColor-yellow);
+}
+
+.navbar__container .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navbar__container .logo {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar__container .topnav-right {
+  float: right;
+}
+
+/* ==================MEDIA QUERIES (medium devices) ===========================*/
+
+@media screen and (max-width: 1024px) {
+  .navbar__container a {
+    color: var(--textColor);
+    text-decoration: none;
+  }
+  /* ==================MEDIA QUERIES (small devices) ===========================*/
+
+  @media screen and (max-width: 600px) {
+    .navbar__container .logo {
+      height: 150px;
+      width: 150px;
+      z-index: 1;
+    }
+    .navbar__container .nav-btn {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .navbar__container nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 65%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: var(--mainColor);
+      transition: var(--transition);
+      transform: translateY(-100vh);
+    }
+
+    .navbar__container .responsive_nav {
+      transform: none;
+    }
+
+    nav .nav-close-btn {
+      position: absolute;
+      top: 3.7rem;
+      right: 3.3rem;
+    }
+
+    nav a {
+      font-size: 1.5rem;
+    }
+  }
+}
